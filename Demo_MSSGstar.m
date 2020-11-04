@@ -11,7 +11,7 @@ for idataset = 1:length(datasets)
         load Indian_pines_corrected;load Indian_pines_gt;load Indian_pines_randp %s=2 10^1 0.01
         paviaU = indian_pines_corrected;
         paviaU_gt = indian_pines_gt;
-        trainnumber = 0.1; Ratio = 0.0812;%Ratio = N_f/N_I;    
+        trainnumber = 0.1; Ratio = 0.0812;%Ratio = N_f/N_I;    % the value of Ratio can be obtained by the function of "Edge_ratio3" in the function of "cubseg"
     elseif strcmp(dataset,'PaviaU')==1
         load PaviaU;load PaviaU_gt;load PaviaU_randp 
         trainnumber = 100; Ratio = 0.0664;%Ratio = N_f/N_I;    
@@ -46,7 +46,7 @@ for idataset = 1:length(datasets)
     end
 
     L1 = 4; % L1 in Eq.(10)
-    labels = labelms(:,:,C+1-L1:C+1+2*L1);% we select l = ?L1; ?L1 + 1; ¡¤ ¡¤ ¡¤ ; 0; ¡¤ ¡¤ ¡¤ ; L2
+    labels = labelms(:,:,C+1-L1:C+1+2*L1);% we select l = ?L1; ?L1 + 1; Â¡Â¤ Â¡Â¤ Â¡Â¤ ; 0; Â¡Â¤ Â¡Â¤ Â¡Â¤ ; L2
 
     rhos   =[0.3];   %[0.01 0.02 0.03 0.05 0.07 0.1:0.05:0.5]
 %     classifier = {'NN','SVM','RF','ELM'};
