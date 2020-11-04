@@ -15,3 +15,14 @@ In hyperspectral image (HSI) analysis, label information is a scarce resource an
  number={}, 
  DOI={10.1109/TNNLS.2020.3029523},}
 ```
+
+```
+@article{jiang2019hyperspectral,
+  title={Hyperspectral Image Classification in the Presence of Noisy Labels},
+  author={Jiang, Junjun and Ma, Jiayi and Wang, Zheng and Chen, Chen and Liu, Xianming},
+  journal={IEEE Transactions on Geoscience and Remote Sensing},
+  volume={57},
+  number={2},
+  pages={851--865},
+  year={2019}
+}
