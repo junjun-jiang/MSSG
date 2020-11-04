@@ -10,7 +10,7 @@ for idataset = 1:length(datasets)
         load Indian_pines_corrected;load Indian_pines_gt;load Indian_pines_randp %s=2 10^1 0.01
         paviaU = indian_pines_corrected;
         paviaU_gt = indian_pines_gt;
-        trainnumber = 0.1; Ratio = 0.0812;%Ratio = N_f/N_I;    
+        trainnumber = 0.1; Ratio = 0.0812;%Ratio = N_f/N_I;    % the value of Ratio can be obtained by the function of "Edge_ratio3" in the function of "cubseg"
     elseif strcmp(dataset,'PaviaU')==1
         load PaviaU;load PaviaU_gt;load PaviaU_randp 
         trainnumber = 50; Ratio = 0.0664;%Ratio = N_f/N_I;    
